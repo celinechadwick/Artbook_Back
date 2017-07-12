@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_action :authenticate_token, except: [:login]
+
   def login
       user = User.find_by(email: params[:email])
 
@@ -18,9 +20,6 @@ class UsersController < ApplicationController
           render :json => { error: "User not found by that email" }, status: 404
       end
   end
-
-
-  before_action :authenticate_token
 
     def index
         # Step 1: Retrieve users from DB
