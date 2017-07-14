@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :authenticate_token, except: [:login, :create]
+  before_action :authenticate_token, except: [:login]
 
   def login
       user = User.find_by(email: params[:email])
