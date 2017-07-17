@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :authenticate_token, except: [:login]
+  before_action :authenticate_token, except: [:login, :create]
 
   def login
       user = User.find_by(email: params[:email])
@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 
               jwt = JWT.encode(user, nil, false)
 
-              render :json => { token: jwt }, status: 201
+              render :json => { token: jwt, userID: user.id }, status: 201
           else
               render :json => { error: "Not authorized" }, status: 401
           end
