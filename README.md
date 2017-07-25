@@ -6,6 +6,11 @@ I started by getting an API key for the Rijks museum, and creating a rails back-
   I then built a React front-end, which allowed users to login or create accounts, and then save their favorite art from the Rails search route. I passed the token to Rails, and used a JWT token for authentication.
 
 
+### Project Front
+[React App](https://github.com/celinechadwick/ArtBook-Front)
+
+### Heroku App
+(https://artbook-front.herokuapp.com/)
 ### Installation Instructions:
 
 1) React Slingshot:
