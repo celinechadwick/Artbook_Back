@@ -10,7 +10,7 @@ I started by getting an API key for the Rijks museum, and creating a rails back-
 [React App](https://github.com/celinechadwick/ArtBook-Front)
 
 ### Heroku App
-(https://artbook-front.herokuapp.com/)
+[Heroku](https://artbook-front.herokuapp.com/)
 ### Installation Instructions:
 
 1) React Slingshot:
